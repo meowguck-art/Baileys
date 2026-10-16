@@ -103,6 +103,10 @@ type MediaUploadResult = {
     ts?: number;
     fbid?: number;
     handle?: string;
+    thumbnail_info?: {
+        thumbnail_direct_path?: string;
+        thumbnail_sha256?: string;
+    };
 };
 export type UploadParams = {
     url: string;
